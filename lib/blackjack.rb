@@ -42,14 +42,13 @@ def hit?(num)
   # code hit? here
   prompt_user
   user_input = get_user_input
-  while user_input != "h" || user_input != "s"
+  if user_input != "h" || user_input != "s"
     invalid_command
     prompt_user
     user_input = get_user_input
-  end
-  if user_input == 'h'
+  elsif user_input == 'h'
     num += deal_card
-  elsif user_input == 's'
+  else user_input == 's'
     return num
   end
 end
