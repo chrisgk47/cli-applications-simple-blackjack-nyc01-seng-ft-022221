@@ -49,7 +49,7 @@ def hit?(num)
   else
     invalid_command
     prompt_user
-    user_put
+    user_input
   end
 end
 
