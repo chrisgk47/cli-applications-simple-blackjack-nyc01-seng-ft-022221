@@ -49,7 +49,7 @@ def hit?(num)
   end
   if user_input == 'h'
       num += deal_card
-    else user_input == 's'
+    elsif user_input == 's'
       return num
     end
   end
